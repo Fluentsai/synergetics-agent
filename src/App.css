@@ -1,42 +1,56 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  height: 100%;
+  width: 100%;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  /* background-color: white; */
+}
+
+div[role='listbox'] {
+  position: absolute;
+  margin-top: 4.5rem;
+  width: inherit;
+}
+
+/* [data-group-item] > button {
+  background-color: transparent;
+} */
+
+.wrapper {
+  /* background-color: 'white'; */
+  height: '100%';
+  width: '100%';
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  height: 5rem;
+  margin-left: -1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.select {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color) !important;
+  color: var(--secondary-text-color);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.select-item {
+  background-color: rgb(36, 36, 36);
 }
 
-.card {
-  padding: 2em;
+.select-item:hover {
+  background-color: rgb(36, 36, 36, 0.5);
 }
 
-.read-the-docs {
-  color: #888;
+.end {
+  float: right;
 }
